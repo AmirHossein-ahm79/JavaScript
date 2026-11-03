@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game">
+      <header>
+        <div class="score">
+          <img src="assets/trophy.png" alt="Trophy icon" />
+          <span>You : <span class="player-score">0</span></span>
+        </div>
+
+        <div class="title">
+          <img src="assets/title.png" alt="Rock Paper Scissors" />
+        </div>
+
+        <div class="score">
+          <img src="assets/computer.png" alt="Computer icon" />
+          <span>Computer : <span class="computer-score">0</span></span>
+        </div>
+      </header>
+
+      <section class="battle">
+        <div class="player">
+          <div class="choice">
+            <img class="player-choice hidden" src="" alt="player choice" />
+            <span class="player-question">?</span>
+          </div>
+          <p>You</p>
+        </div>
+
+        <div class="vs">VS</div>
+
+        <div class="player">
+          <div class="choice">
+            <img class="computer-choice hidden" src="" alt="computer choice" />
+            <span class="computer-question">?</span>
+          </div>
+          <p>Computer</p>
+        </div>
+      </section>
+
+      <section class="moves">
+        <button class="move" data-choice="rock">
+          <img src="assets/rock.png" alt="Rock" />
+          <span>Rock</span>
+        </button>
+
+        <button class="move" data-choice="paper">
+          <img src="assets/paper.png" alt="Paper" />
+          <span>Paper</span>
+        </button>
+
+        <button class="move" data-choice="scissors">
+          <img src="assets/scissors.png" alt="Scissors" />
+          <span>Scissors</span>
+        </button>
+      </section>
+
+      <div class="message">Make your move!</div>
+      <button class="reset">↻ &nbsp; Reset Game</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

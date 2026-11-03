@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #302052, #1c153b);
+  font-family: "Rubik", sans-serif;
+  color: white;
+  padding: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  width: 100%;
+  max-width: 120rem;
+  background: rgba(15, 12, 45, 0.7);
+  border: 2px solid #49347d;
+  border-radius: 30px;
+  padding: 2.5rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 1rem 2rem;
+  border: 2px solid #49347d;
+  border-radius: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.score img {
+  width: 4.2rem;
+  height: 4.2rem;
+  object-fit: contain;
+}
+
+.title {
+  margin-top: -6rem;
+}
+
+.title img {
+  width: 60rem;
+  object-fit: contain;
+}
+
+/* Battle */
+.battle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  margin-bottom: 5rem;
+}
+
+.player {
+  text-align: center;
+  position: relative;
+}
+
+.choice {
+  width: 22rem;
+  height: 22rem;
+  border: 7px solid #59468c;
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+}
+
+.choice span {
+  font-size: 10rem;
+  font-weight: bold;
+  color: #9285c3;
+}
+
+.player p {
+  background: #49347d;
+  padding: 1rem 2rem;
+  width: 15rem;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+
+  position: absolute;
+  left: 50%;
+  bottom: -4%;
+  transform: translateX(-50%);
+}
+
+.vs {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: #49347d;
+  padding: 1.5rem 3rem;
+  border-radius: 30px;
+}
+
+/* Move Buttons */
+.moves {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.move {
+  width: 22rem;
+  height: 20rem;
+  background: transparent;
+  border: 3px solid #8886c8;
+  border-radius: 28px;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.move img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+}
+
+.move:hover {
+  background: rgba(130, 90, 220, 0.25);
+  transform: translateY(-5px);
+}
+
+/* Message */
+.message {
+  width: 70%;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #c2b9eb;
+  background: rgba(100, 75, 160, 0.2);
+  border: 2px solid #49347d;
+  border-radius: 50px;
+  margin-bottom: 2.5rem;
+}
+
+/* Reset */
+.reset {
+  padding: 1.7rem 6rem;
+  background: linear-gradient(135deg, #8950d9, #6335b5);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.reset:hover {
+  transform: scale(1.05);
+}
+
+/* JavaScript Classes */
+.hidden {
+  display: none;
+}
+
+.win {
+  color: #60e99a;
+}
+
+.lose {
+  color: #ff6685;
+}
+
+.draw {
+  color: #f5d36b;
+}
