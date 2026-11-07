@@ -1,0 +1,165 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #1e293b;
+  font-family: "Inter", sans-serif;
+  line-height: 1.8;
+}
+
+/* Progress Bar */
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f1f5f9;
+  padding: 1.2rem 5%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 1000;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.progress-track {
+  flex: 1;
+  height: 7px;
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #0d9488, #2dd4bf);
+  border-radius: 10px;
+}
+
+.percentage {
+  color: #0d9488;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Header */
+.header {
+  padding: 6.5rem 2rem 2rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.header-content {
+  max-width: 85rem;
+  margin: auto;
+}
+
+.logo {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #0f766e;
+}
+
+.logo span {
+  color: #2dd4bf;
+}
+
+/* Main Content */
+.content {
+  max-width: 76rem;
+  width: 90%;
+  margin: 7.5rem auto;
+}
+
+/* Article Header */
+.category {
+  display: inline-block;
+  background: #ccfbf1;
+  color: #0f766e;
+  padding: 0.5rem 1.4rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+h1,
+h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h1 {
+  color: #0f172a;
+  font-size: 4.2rem;
+  line-height: 1.35;
+  margin: 2.5rem 0 1.5rem;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 1.7rem;
+  margin-bottom: 2.5rem;
+}
+
+.article-info {
+  color: #94a3b8;
+  font-size: 1.3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Article Body */
+.article-body {
+  margin-top: 3.5rem;
+}
+
+h2 {
+  color: #0f766e;
+  font-size: 2.5rem;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: #475569;
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: #94a3b8;
+  border-top: 1px solid #e2e8f0;
+  font-size: 1.3rem;
+}
+
+/* Responsive */
+@media (max-width: 37.5em) {
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    margin-top: 5rem;
+  }
+}
