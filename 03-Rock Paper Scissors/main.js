@@ -75,9 +75,6 @@ resetButton.addEventListener("click", function () {
   playerScoreElement.textContent = playerScore;
   computerScoreElement.textContent = computerScore;
 
-  playerChoiceElement.src = "";
-  computerChoiceElement.src = "";
-
   playerQuestion.classList.remove("hidden");
   computerQuestion.classList.remove("hidden");
 
